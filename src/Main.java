@@ -60,11 +60,12 @@ public class Main {
                 case 1 -> aksiUser.pesanFilm();
                 case 2 -> aksiUser.lihatListFilm(); //aksiUser.lihatSaldo();
                 case 3 -> aksiUser.lihatPesanan();
-                case 4 -> {
+                case 4 -> aksiUser.lihatSaldo();
+                case 5 -> {
                     aksiUser.keluar();
                     return;
                 }
-                case 5 -> aksiUser.tutupAplikasi();
+                case 6 -> aksiUser.tutupAplikasi();
                 default -> System.out.println("Pilihan tidak valid");
             }
         }

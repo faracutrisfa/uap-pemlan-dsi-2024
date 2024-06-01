@@ -10,8 +10,9 @@ public class AksiUser extends Aksi {
         System.out.println("1. Pesan Film");
         System.out.println("2. Lihat List Film");
         System.out.println("3. Lihat Pesanan");
-        System.out.println("4. Logout");
-        System.out.println("5. Tutup Aplikasi");
+        System.out.println("4. Lihat Saldo");
+        System.out.println("5. Logout");
+        System.out.println("6. Tutup Aplikasi");
     }
 
     @Override
