@@ -1,3 +1,5 @@
+//Cut Risfa Zuhra - 235150401111044
+
 public class Akun {
     private static final ThreadLocal<User> currentUser = new ThreadLocal<>();
 

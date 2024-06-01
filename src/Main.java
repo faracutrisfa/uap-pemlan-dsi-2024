@@ -1,3 +1,5 @@
+//Cut Risfa Zuhra - 235150401111044
+
 import java.util.Scanner;
 
 public class Main {
@@ -58,7 +60,7 @@ public class Main {
             aksiUser.tampilanAksi();
             switch (scanner.nextInt()) {
                 case 1 -> aksiUser.pesanFilm();
-                case 2 -> aksiUser.lihatListFilm(); //aksiUser.lihatSaldo();
+                case 2 -> aksiUser.lihatListFilm();
                 case 3 -> aksiUser.lihatPesanan();
                 case 4 -> aksiUser.lihatSaldo();
                 case 5 -> {

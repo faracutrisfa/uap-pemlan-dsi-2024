@@ -1,3 +1,5 @@
+//Cut Risfa Zuhra - 235150401111044
+
 public abstract class Aksi implements TampilanInterface {
     public abstract void keluar();
 
