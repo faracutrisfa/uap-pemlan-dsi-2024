@@ -58,14 +58,13 @@ public class Main {
             aksiUser.tampilanAksi();
             switch (scanner.nextInt()) {
                 case 1 -> aksiUser.pesanFilm();
-                case 2 -> aksiUser.lihatSaldo();
-                case 3 -> aksiUser.lihatListFilm();
-                case 4 -> aksiUser.lihatPesanan();
-                case 5 -> {
+                case 2 -> aksiUser.lihatListFilm(); //aksiUser.lihatSaldo();
+                case 3 -> aksiUser.lihatPesanan();
+                case 4 -> {
                     aksiUser.keluar();
                     return;
                 }
-                case 6 -> aksiUser.tutupAplikasi();
+                case 5 -> aksiUser.tutupAplikasi();
                 default -> System.out.println("Pilihan tidak valid");
             }
         }

@@ -1,4 +1,9 @@
+import java.util.Scanner;
+import java.util.Map;
+
 public class AksiAdmin extends Aksi {
+    Scanner scanner = new Scanner(System.in);
+
     @Override
     public void tampilanAksi() {
         System.out.println("Aksi Admin:");
@@ -22,10 +27,28 @@ public class AksiAdmin extends Aksi {
 
     @Override
     public void lihatListFilm() {
-        // Implementasi melihat list film
+        Map<String, Film> films = Film.getFilms();
+        if (films.isEmpty()) {
+            System.out.println("Tidak ada film yang tersedia.");
+        } else {
+            films.forEach((name, film) -> {
+                System.out.println("Film: " + film.getName() + " - Deskripsi: " + film.getDescription() +
+                                   " - Harga: " + film.getPrice() + " - Stok: " + film.getStock());
+            });
+        }
     }
 
     public void tambahFilm() {
-        // Implementasi menambahkan film
+        System.out.print("Nama Film: ");
+        String name = scanner.nextLine();
+        System.out.print("Deskripsi Film: ");
+        String description = scanner.nextLine();
+        System.out.print("Harga Tiket: ");
+        double price = scanner.nextDouble();
+        System.out.print("Stok Tiket: ");
+        int stock = scanner.nextInt();
+        scanner.nextLine();
+        
+        Film.addFilm(name, description, price, stock);
     }
 }
